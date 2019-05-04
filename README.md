@@ -1,6 +1,11 @@
 # One-Neural-Network-for-Multiple-Purposes
-This repository contains code for a neural network model that is trained once and is used for 4 different tasks successfully. Here we train a single model, which is used for captioning images, inferring images from a caption, finding similar words from a given word and finding similar images from given image.
+This repository contains code for a neural network model that is trained once and is used for 4 different tasks successfully. 
+Here we train a single model, which is used for captioning images, inferring images from a caption, finding similar words from a given word and finding similar images from given image.
 
+
+Here we use pretrained InceptionV3 model to generate 2048-dimensional representation of a image, two fully connected neural networks that are used to produce 300-dimensional embeddings for images and words and recurrent neural network layer followed by a fully connected neural network to predict the next word.
+
+We generate image captions without the help of attention. Then we use embeddings from the two fully connected neural networks to find similar images and similar captions for a given caption using cosine similarity, and for "inferring image given caption" we fix the model weights and instead of image embeddings, we input a randomly generated embedding, now keeping the model weights fixed we follow the training procedure we followed earlier and only update the randomly generated embedding. After training for quiet a few number of iterations we use cosing similarity to find the most similar image to this embedding, hence, completing the task of inferring image from caption.
 
 
 The dataset used by us is Flickr8K Dataset.
