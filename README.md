@@ -18,9 +18,9 @@ The programs for the project is dependent on multiple pickled files that will be
 
 3. run the test_images_pickle file while placing it within the Flickr8k_text folder. 
 
-4. Now, run the preprocessing_ordering_data_for_model.ipynb file to order the data accordingly for the training phase.
+4. run the preprocessing_ordering_data_for_model.ipynb file to order the data accordingly for the training phase.
 
-5. Now run the Image_Caption_Generation_Training.ipynb file which will provide predicted captions for the image and train the model.
+5. run the Image_Caption_Generation_Training.ipynb file which will provide predicted captions for the image and train the model.
 
 6. Make sure you save your model using checkpoints accordingly. As you will require a saved model for the other tasks in the project.
 
