@@ -5,15 +5,16 @@ Here we train a single model, which is used for captioning images, inferring ima
 
 Here we use pretrained InceptionV3 model to generate 2048-dimensional representation of a image, a fully connected neural networks is used to produce 300-dimensional embeddings from image embeddings (from inception V3), another fully connected neural network is used to produce 300 dimensional embeddings from word vectors, a recurrent neural network layer followed by a fully connected neural network to predict the next word. (Look at the poster for model architecture - [Poster](https://github.com/Sahaj09/One-Neural-Network-for-Multiple-Tasks/blob/master/Project%20Poster.pdf)). 
 
-Task 1 (generate captions from image) - 
+### Task 1 (generate captions from image) - 
 We learn to generate the image captions using the above model and the image captioning dataset 
 
-Task 2 and 3 (find similar images given an image, find similar captions given a caption) -
+### Task 2 and 3 (find similar images given an image, find similar captions given a caption) -
 Then we use embeddings from the two fully connected neural networks (that generate 300 dimensional embeddings from InceptionV3 output embeddings and word vectors) to find similar images for given image, and  similar captions for a given caption using cosine similarity.
 
-Task 4 (find images for a caption) -
+### Task 4 (find images for a caption) -
 For "inferring image given caption" we fix the model weights and instead of image embeddings, we input a randomly generated embedding, now keeping the model weights fixed we only update the input embedding. After training for a few number of iterations we use cosing similarity to find the most similar image to the resulting embedding, hence, completing the task of inferring image from caption.
 
+### Other details
 
 The dataset used by us is Flickr8K Dataset.
 
