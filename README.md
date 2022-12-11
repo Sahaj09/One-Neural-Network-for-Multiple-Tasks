@@ -12,7 +12,7 @@ We learn to generate the image captions using the above model and the image capt
 Then we use embeddings from the two fully connected neural networks (that generate 300 dimensional embeddings from InceptionV3 output embeddings and word vectors) to find similar images for given image, and  similar captions for a given caption using cosine similarity.
 
 ### Task 4 (find images for a caption) -
-For "inferring image given caption" we fix the model weights and instead of image embeddings, we input a randomly generated embedding, now keeping the model weights fixed we only update the input embedding. After training for a few number of iterations we use cosing similarity to find the most similar image to the resulting embedding, hence, completing the task of inferring image from caption.
+For "inferring image given a caption" we fix the model weights and instead of image embeddings, we input a randomly generated embedding, now keeping the model weights fixed we only update the input embedding. After training for a few number of iterations we use cosing similarity to find the most similar image to the resulting embedding, hence, completing the task of inferring image from caption.
 
 ### Other details
 
