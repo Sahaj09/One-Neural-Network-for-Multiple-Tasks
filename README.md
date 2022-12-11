@@ -3,7 +3,7 @@ This repository contains code for a neural network model that is trained once an
 Here we train a single model, which is used for captioning images, inferring images from a caption, finding similar words from a given word and finding similar images from given image.
 
 
-Here we use pretrained InceptionV3 model to generate 2048-dimensional representation of a image, a fully connected neural networks is used to produce 300-dimensional embeddings from image embeddings (from inception V3), another fully connected neural network is used to produce 300 dimensional embeddings from word vectors, a recurrent neural network layer followed by a fully connected neural network to predict the next word. (Look at the poster for model architecture - [Poster](https://github.com/Sahaj09/One-Neural-Network-for-Multiple-Tasks/blob/master/Project%20Poster.pdf)). 
+Here we use pretrained InceptionV3 model to generate 2048-dimensional representation of a image, a fully connected neural networks is used to produce 300-dimensional embeddings from image embeddings (from inception V3), another fully connected neural network is used to produce 300 dimensional embeddings from word vectors, a recurrent neural network layer followed by a fully connected neural network to predict the next word. **(Look at the poster for model architecture - [Poster](https://github.com/Sahaj09/One-Neural-Network-for-Multiple-Tasks/blob/master/Project%20Poster.pdf))**. 
 
 ### Task 1 (generate captions from image) - 
 We learn to generate the image captions using the above model and the image captioning dataset 
